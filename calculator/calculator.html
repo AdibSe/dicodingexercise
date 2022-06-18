@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+    <script src="storage.js" defer></script>
     <title>Web Calculator</title>
 </head>
 <body>
@@ -36,6 +38,22 @@
             <div class="button">0</div>
             <div class="button equals double">=</div>
         </div>
+    </div>
+    <div class="history">
+        <h2>Tabel riwayat perhitungan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Angka pertama</th>
+                    <th>Operator</th>
+                    <th>Angka kedua</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <div id="historylist"></div>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
